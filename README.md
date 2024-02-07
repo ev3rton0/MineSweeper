@@ -2,6 +2,9 @@
 
 Este projeto implementa o jogo Minesweeper em linguagem Assembly MIPS, dividindo o código em vários arquivos para facilitar a organização. Cada funcionalidade do jogo está contida em um arquivo separado.
 
+#Equipe
+Arthur Ricardo e Everton Lohan
+
 ## Estrutura do Repositório
 
 - **main.asm**: Contém a função principal (main) que controla o fluxo do jogo em Assembly MIPS.
