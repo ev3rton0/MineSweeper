@@ -4,9 +4,9 @@
 
 revealNeighboringCells:
 	save_context
-	move $s0, $a0 #endereÁo do board
-	move $s1, $a1 #em a1 est· a linha
-	move $s2, $a2 #en a2 est· a coluna
+	move $s0, $a0 #endere√ßo do board
+	move $s1, $a1 #em a1 est√° a linha
+	move $s2, $a2 #en a2 est√° a coluna
 	
 	li $v0, 0
 	
@@ -34,7 +34,7 @@ revealNeighboringCells:
 	
 	bne $s7, -2, continua
 	
-	#chamando a funÁ„o countadjacentbombs 
+	#chamando a fun√ß√£o countadjacentbombs 
 	move $a1,$s3
 	move $a2,$s5 
 	addi $sp, $sp,-4
@@ -44,16 +44,6 @@ revealNeighboringCells:
 	addi $sp, $sp,4
 	sw $v0,0($a3)
 	
-	#sll $t1,$s3,5
-	#sll $t2,$s5,2
-	
-	#add $t0,$t1,$t2
-	#add $t0,$t0,$s0
-	
-	#sw $v0, 0($t0)
-	
-	#bne $v0,$zero,continua
-	#move $a0, $s0
 	move $a1, $s3
 	move $a2, $s5 
 	
